@@ -58,6 +58,14 @@
         </nav>
     </header>
 
+    <main style="margin-top: ;">
+        <div class="main-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TlJSZy-Vj0o" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="aside-bar"></div>
+    </main>
+
 
 <style>
     * {
@@ -76,6 +84,33 @@
         justify-content: space-between !important;
         align-items: center !important;
         background: #202020;
+    }
+
+    main {
+        display: flex;
+        background-color: #000;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        padding: 70px;
+        top: 50px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 80%;
+    }
+
+    .main-content{
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .aside-bar{
+        width: 20%;
+        height: 100%;
+        background-color: blue;
     }
 
     header #logo{
