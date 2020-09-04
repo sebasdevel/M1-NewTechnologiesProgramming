@@ -1,2 +1,7 @@
-# M1-NewTechnologiesProgramming
-Project Moment 1 - Version Control System
+# Moment One - New Technologies Programming
+
+_Graphical interface similar to YouTube using GIT_
+
+## GS Videos - ▶️
+
+_Simple HTML template with jQuery and BS._
