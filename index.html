@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS - Videos ▶️</title>
+    
+    <!-- SV - Favicon of GS -->
+        
+    <link rel="shortcut icon" href="https://i.ytimg.com/an/hvkLY36AR9ODNk_sEDi8Hw/featured_channel.jpg?v=5a543afd" type="image/x-icon">
+    
+    <!-- jQuery -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CDN -->
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Font CDN -->
+        
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- SV - Header -->
+    
+    <header>
+        <div id="menu-responsive">
+            <i id="icon-responsive" class="fas fa-bars"></i>
+        </div>
+        <div id="logo">
+            <h1>- GERRY SANCHEZ -</h1>
+        </div>
+        <div class="input-group mb-3" style="width: 20%; line-height: 20px; margin-bottom: 0 !important;">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search here!">
+        </div>
+        <div style="width: 20%; line-height: 20px; margin-bottom: 0 !important; margin-left: 150px;">
+            <h5 style="color: #fff; margin-top: 6px;"><i style="margin-right: 20px;" class="fas fa-user"></i>Carlos Steeven</h5>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="javascript:;">Inicio</a></li>
+                <li><a href="javascript:;">Nosotros</a></li>
+                <li><a href="javascript:;">Nuestros Aliados</a></li>
+                <li><a href="javascript:;">Contáctenos</a></li=>
+            </ul>
+        </nav>
+    </header>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        z-index: 1000;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        background: #202020;
+    }
+
+    header #logo{
+        padding: 0;
+        display: flex;
+        cursor: pointer;
+        transition: transform .3s ease-out 0s; 
+    }
+
+    #logo > h1{
+        margin-top: 12px;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #logo img {
+        max-width: none;
+        height: 48px;
+        margin: 15px 0px 0px 10px;
+        color: white !important;
+    }
+
+    #menu {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none;
+    }
+    
+    #menu li{
+        display: block;
+        position: relative;
+        font-size: 17px;
+        margin: 10px;
+        padding: 10px;
+        font-weight: 200;
+        border: 2px solid transparent;
+        transition: .3s ease-out 0s;
+    }
+
+    #menu li:hover{
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        color: #ffffff !important;
+    }
+
+    #menu li a{
+        padding: 0px !important;
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 20px 20px;
+        text-decoration: none;
+    }
+
+    #menu li a i{
+        margin-right: 10px;
+    }
+
+    #menu li a:hover{
+        color: #a8a8a8;
+        transition: .3s ease-out 0s;
+    }
+
+    #menu-responsive{
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    #icon-responsive{
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px;
+        border: 2px solid #ffffff;
+        transition: .3s ease-out 0s;
+    }
+
+    #icon-responsive:hover{
+        color: gray;
+        border: 2px solid gray;
+    }
+
+    nav{
+        background: #000;
+        text-align: center;
+        display: block !important;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        transition: .5s ease-out 0s;
+    }
+
+    .input-group-text{
+        background-color: #000000;
+    }
+
+    .form-control{
+        color: white;
+        background-color: transparent;
+    }
+
+    .form-control:focus{
+        color: white;
+        background-color: transparent;
+    }
+
+    .input-group-text i{
+        color: white;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        var c = 0;
+
+        $("#icon-responsive").click(function () {
+            if (c == 0) {
+                $('nav').css('left', '0%');
+                c = 1;
+            }
+            else {
+                c = 0;
+                $('nav').css('left', '-100%');
+            }
+        });
+    });
+</script>
+</body>
+</html>
