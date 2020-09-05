@@ -64,8 +64,22 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h2 style="text-align: center; font-weight: bold; color: white;">MENSAJE PARA LOS JOVENES - GERRY SANCHEZ</h2>
             <p style="text-align: center; color: #fff">50,815 vistas - 12 may. 2019</p>
+            <div class="text-center">
+                <button type="button" class="btn btn-success"><i class="far fa-thumbs-up"></i></button>
+                <button type="button" class="btn btn-danger"><i class="far fa-thumbs-down"></i></button>
+                <button type="button" class="btn btn-primary">SUBSCRIBE</button>
+            </div>
         </div>
         <div class="aside-bar">
+            <h5 style="text-align: center; font-size: 15px; font-weight: bold; color: white; margin-top: 10px;">MÁS VIDEOS DEL MAESTRO</h5>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/WZvVBjdLwtA/maxresdefault.jpg" alt="EL EGO"><p>EL EGO</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/BaEyGJ0wouY/maxresdefault.jpg" alt="NO ES NEGOCIABLE"><p>ESTO NO ES NEGOCIABLE</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/yfnFBdxIopE/maxresdefault.jpg" alt="PAGA EL MALDITO PRECIO"><p>PAGA EL MALDITO PRECIO</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/AFZyiSSctBw/maxresdefault.jpg" alt="NADIE TE DICE ESTO"><p>NADIE TE DICE ESTO</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/xqNFx4RekaM/maxresdefault.jpg" alt="LA ILUSIÓN DE LA FELICIDAD"><p>LA ILUSIÓN DE LA FELICIDAD</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/0w8NiYn8n4c/maxresdefault.jpg" alt="EL PODER DE LOS HÁBITOS"><p>EL PODER DE LOS HÁBITOS</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/eqLGP43MdVA/maxresdefault.jpg" alt="DESAPEGO"><p>DESAPEGO</p></div>
+            <div class="video-aside"><img src="https://img.youtube.com/vi/qJjYBqLi1mo/maxresdefault.jpg" alt="¡YA DEJA IR, CARAJO!"><p>¡YA DEJA IR, CARAJO!</p></div>
         </div>
     </main>
 
@@ -104,15 +118,30 @@
         height: 80%;
     }
 
+    .video-aside{
+        display: flex;
+    }
+
+    .video-aside p{
+        margin-left: 20px;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .aside-bar img{
+        width: 50%;
+    }
+
     .main-content{
         width: 80%;
         height: 100%;
     }
 
     .aside-bar{
+        padding: 10px;
         width: 20%;
-        height: 100%;
-        background-color: blue;
+        height: 98%;
+        margin: 0px 10px 10px 10px;
     }
 
     header #logo{
@@ -240,6 +269,18 @@
                 c = 0;
                 $('nav').css('left', '-100%');
             }
+        });
+
+        $('.btn-success').click(function () {
+            alert("You liked this video")
+        });
+
+        $('.btn-danger').click(function () {
+            alert("You unliked this video")
+        });
+
+        $('.btn-primary').click(function () {
+            alert("Welcome to the family!")
         });
     });
 </script>
